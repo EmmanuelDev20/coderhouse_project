@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Sigmar&display=swap" rel="stylesheet">
+  <title>Happy meat</title>
+</head>
+<body>
+  <header>
+    <div class="container menu">
+      <a href="./index.html">
+        <h1>Happy meat</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./index.html" id="inicio">Inicio</a></li>
+          <li><a href="./menu.html" id="menu">Menú</a></li>
+          <li><a href="./about.html" id="about">Acerca</a></li>
+          <li><a href="./offers.html" id="offers">Ofertas</a></li>
+          <li><a href="./contact.html" class="active-link" id="contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-contact"></section>
+
+    <div class="form-container container">
+      <form class="form">
+        <h1>Queremos saber de ti</h1>
+        <small>Envía tus datos y nos pondremos en contacto</small>
+        <div>
+          <label for="name">Nombre</label>
+          <input id="name" type="text">
+        </div>
+        <div>
+          <label for="lastname">Correo electrónico</label>
+          <input id="lastname" type="email">
+        </div>
+        <div>
+          <label for="msg">Mensaje</label>
+          <textarea name="msg" id="msg" rows="2"></textarea>
+        </div>
+
+        <input class="submit" type="submit" value="Enviar">
+
+      </form>
+      <div class="img-form">
+        <img class="img-contact" src="./assets/img/contactus.png" alt="">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="container">Desarrollado por: Emmanuel Ovares Lobo</p>
+  </footer>
+</body>
+</html>

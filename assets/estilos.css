@@ -1,0 +1,223 @@
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sigmar', cursive;
+}
+
+img {
+  max-width: 300px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+footer p {
+  padding: .5rem 0;
+  text-align: center;
+}
+
+/* Hero section */
+section.hero {
+  height: 70vh;
+  width: 100%;
+  background-color: aquamarine;
+  background-size: cover;
+  background-position: center;
+}
+
+section.hero-index {
+  background-image: url(./img/Burguer.png);
+}
+
+section.hero-menu {
+  background-image: url(./img/french.png);
+}
+
+section.hero-about {
+  background-image: url(./img/abouthero.png);
+}
+
+section.hero-offers {
+  background-image: url(./img/cevichehero.png);
+}
+
+section.hero-contact {
+  background-image: url(./img/contacthero.png);
+}
+
+/* Index page */
+
+iframe {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+header {
+  background-color:rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+header h1 {
+  color: white;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+  padding: .5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 1px solid white;
+}
+
+nav .active-link {
+  border-bottom: 1px solid white;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.products-container p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* About section */
+section.about {
+  display: flex;
+  gap: 2rem;
+}
+
+section.about .left, section.about .right {
+  width: 100%;
+}
+
+section.about .right img {
+  max-width: 100%;
+}
+
+/* Video section */
+section.video {
+  display: flex;
+  gap: 4rem;
+}
+
+section.video .left {
+  width: 100%;
+}
+
+section.video .right {
+  position: relative;
+  width: 100%;
+}
+
+section.video iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Contact page */
+
+.form-container {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.form-container .img-form img.img-contact {
+  max-width: 100%;
+}
+
+.form {
+  padding: 2rem;
+  padding-bottom: 4rem;
+  max-width: 500px;
+  background-color:white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, .05);
+  border-radius: 15px;
+  margin-bottom: 6rem;
+}
+
+.form input, .form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  padding: 1rem .5rem;
+}
+
+
+.form input:focus, .form textarea:focus {
+  outline: none;
+}
+
+.form small {
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.form .submit {
+  margin-top: 4rem;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+}
+
