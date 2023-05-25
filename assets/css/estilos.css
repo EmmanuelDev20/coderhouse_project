@@ -16,8 +16,9 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-.container {
+.personalized-container {
   max-width: 1080px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,12 +40,14 @@ footer {
 footer p {
   padding: .5rem 0;
   text-align: center;
+  margin: 0;
 }
 
 /* Hero section */
 div.hero {
   height: 70vh;
   width: 100%;
+  margin-bottom: 4rem;
 
   display: flex;
   align-items: center;
@@ -79,10 +82,9 @@ div.hero .hero-title {
 }
 
 /* Index page */
-
-iframe {
-  max-width: 300px;
-  max-height: 300px;
+iframe.index-video {
+  min-height: 200px;
+  width: 100%;
 }
 
 header {
@@ -95,11 +97,6 @@ header {
 
 header h1 {
   color: white;
-}
-
-header .menu {
-  display: flex;
-  align-items: center;
 }
 
 nav {
@@ -126,65 +123,52 @@ nav .active-link {
   border-bottom: 1px solid white;
 }
 
-.products-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
 .products-container p {
   text-align: center;
   font-weight: bold;
 }
 
+.products-container img {
+  width: 100%;
+}
+
+/* Menu section */
+.products-container-flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .products-container-flex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .products-container-flex {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.products-container-flex img{
+  width: 100%;
+}
+
 /* About section */
-section.about {
-  display: flex;
-  gap: 2rem;
-}
-
-section.about .left, section.about .right {
+section.about img{
   width: 100%;
-}
-
-section.about .right img {
-  max-width: 100%;
-}
-
-/* Video section */
-section.video {
-  display: flex;
-  gap: 4rem;
-}
-
-section.video .left {
-  width: 100%;
-}
-
-section.video .right {
-  position: relative;
-  width: 100%;
-}
-
-section.video iframe {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 /* Contact page */
 
 .form-container {
   margin-top: 4rem;
-  display: flex;
-  gap: 3rem;
 }
 
-.form-container .img-form img.img-contact {
-  max-width: 100%;
+.form-container .img-form img{
+  width: 100%;
+  margin-bottom: 4rem;
 }
 
 .form {

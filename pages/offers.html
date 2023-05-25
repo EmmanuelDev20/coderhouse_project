@@ -4,25 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/estilos.css">
+  <!-- Fuentes de google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Sigmar&display=swap" rel="stylesheet">
   <title>Happy meat</title>
 </head>
 <body>
-  <header>
-    <div class="container menu">
-      <a href="../index.html">
+  <header class="navbar navbar-expand-md" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
         <h1>Happy meat</h1>
       </a>
-      <nav>
-        <ul>
-          <li><a href="../index.html" id="inicio">Inicio</a></li>
-          <li><a href="./menu.html" id="menu">Menú</a></li>
-          <li><a href="./about.html" id="about">Acerca</a></li>
-          <li><a href="./offers.html" class="active-link" id="offers">Ofertas</a></li>
-          <li><a href="./contact.html" id="contact">Contacto</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./menu.html">Menú</a></li>
+          <li><a href="./about.html">Acerca</a></li>
+          <li><a href="./offers.html" class="active-link">Ofertas</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -34,26 +40,26 @@
       <h1 class="hero-title">Ofertas</h1>
     </div>
 
-    <section class="images container">
+    <section class="images personalized-container">
       <h2>Ofertas</h2>
-      <div class="products-container">
-        <article>
+      <div class="products-container row">
+        <article class="col-12 col-md-6 col-lg-3">
           <img src="../assets/img/burguer2.png" alt="Hamburguesa">
           <p>Hamburguesa</p>
         </article>
-        <article>
+        <article class="col-12 col-md-6 col-lg-3">
           <img src="../assets/img/frenchfries.png" alt="Papas fritas">
           <p>Papas fritas</p>
         </article>
-        <article>
+        <article class="col-12 col-md-6 col-lg-3">
           <img src="../assets/img/friedchicken.png" alt="Pollo frito">
           <p>Pollo frito</p>
         </article>
-        <article>
+        <article class="col-12 col-md-6 col-lg-3">
           <img src="../assets/img/milanesa.png" alt="Milanesa">
           <p>Milanesa</p>
         </article>
-        <article>
+        <article class="col-12 col-md-6 col-lg-3">
           <img src="../assets/img/fish.png" alt="Pescado a la plancha">
           <p>Pescado a la plancha</p>
         </article>
@@ -62,7 +68,8 @@
   </main>
 
   <footer>
-    <p class="container">Desarrollado por: Emmanuel Ovares Lobo</p>
+    <p class="personalized-container">Desarrollado por: Emmanuel Ovares Lobo</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
