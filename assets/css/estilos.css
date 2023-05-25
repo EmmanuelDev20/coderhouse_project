@@ -1,5 +1,4 @@
 /* General styles */
-
 * {
   margin: 0;
   padding: 0;
@@ -31,10 +30,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Sigmar', cursive;
 }
 
-img {
-  max-width: 300px;
-}
-
 /* Footer */
 footer {
   background-color: rgb(0, 0, 0);
@@ -47,32 +42,40 @@ footer p {
 }
 
 /* Hero section */
-section.hero {
+div.hero {
   height: 70vh;
   width: 100%;
-  background-color: aquamarine;
-  background-size: cover;
-  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-section.hero-index {
-  background-image: url(./img/Burguer.png);
+div.hero .hero-image {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-section.hero-menu {
-  background-image: url(./img/french.png);
+div.hero:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 1;
 }
 
-section.hero-about {
-  background-image: url(./img/abouthero.png);
-}
-
-section.hero-offers {
-  background-image: url(./img/cevichehero.png);
-}
-
-section.hero-contact {
-  background-image: url(./img/contacthero.png);
+div.hero .hero-title {
+  z-index: 1;
+  color: white;
 }
 
 /* Index page */
@@ -87,6 +90,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 header h1 {
@@ -207,9 +211,10 @@ section.video iframe {
   outline: none;
 }
 
-.form small {
+.form .text-sm {
   margin-bottom: 2rem;
   display: block;
+  font-size: .9rem;
 }
 
 .form .submit {
