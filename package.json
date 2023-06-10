@@ -1,0 +1,25 @@
+{
+  "name": "proyecto_coder_house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/estilo.scss assets/css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelDev20/coderhouse_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelDev20/coderhouse_project/issues"
+  },
+  "homepage": "https://github.com/EmmanuelDev20/coderhouse_project#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
