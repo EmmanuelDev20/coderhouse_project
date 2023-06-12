@@ -1,0 +1,40 @@
+.products-container {
+
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
+.products-container-flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  img{
+    width: 100%;
+  }
+}
+
+@media (min-width: $media-tablet) {
+  .products-container-flex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: $media-laptop) {
+  .products-container-flex {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+section.about {
+  img{
+    width: 100%;
+  }  
+}

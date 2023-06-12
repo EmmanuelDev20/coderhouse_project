@@ -1,0 +1,36 @@
+.hero {
+  height: 70vh;
+  width: 100%;
+  margin-bottom: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 1;
+  }
+
+  .hero-image {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }  
+
+  .hero-title {
+    z-index: 1;
+    color: white;
+  }
+}

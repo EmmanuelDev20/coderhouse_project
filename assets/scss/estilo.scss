@@ -1,3 +1,18 @@
-body {
-  background: red;
-}
+/*------------------------------------*\
+    $GENERAL
+\*------------------------------------*/
+@import 'partials/variables';
+@import 'partials/base';
+
+/*------------------------------------*\
+    $SECTIONS
+\*------------------------------------*/
+@import 'partials/sections/footer';
+@import 'partials/sections/hero';
+@import 'partials/sections/navbar';
+
+/*------------------------------------*\
+    $PAGES
+\*------------------------------------*/
+@import 'partials/pages/index';
+@import 'partials/pages/contact'
