@@ -41,6 +41,26 @@
       color: white;
       font-weight: bold;
       font-family: 'Rubik', sans-serif;
+      transition: all .2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }  
+}
+
+.img-form {
+  .social-container {
+    width: 2rem;
+    display: inline-block;
+    transition: .1s ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .insta {
+    margin-left: 1rem;
+  }
 }

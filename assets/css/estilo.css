@@ -87,7 +87,9 @@ header {
       gap: 2rem; }
     header nav a {
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all .2s ease-in-out;
+      border: 1px solid transparent; }
       header nav a:hover {
         border-bottom: 1px solid white; }
     header nav .active-link {
@@ -153,4 +155,17 @@ section.about img {
       background-color: black;
       color: white;
       font-weight: bold;
-      font-family: 'Rubik', sans-serif; }
+      font-family: 'Rubik', sans-serif;
+      transition: all .2s ease; }
+      .form-container .form .submit:hover {
+        transform: scale(1.05); }
+
+.img-form .social-container {
+  width: 2rem;
+  display: inline-block;
+  transition: .1s ease-in; }
+  .img-form .social-container:hover {
+    transform: scale(1.1); }
+
+.img-form .insta {
+  margin-left: 1rem; }
